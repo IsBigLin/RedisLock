@@ -1,0 +1,121 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>redisLock</groupId>
+  <artifactId>redisLock</artifactId>
+  <packaging>war</packaging>
+  <version>1.0.0</version>
+  <name>redisLock Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+
+
+
+
+    <!-- ifs -->
+
+    <dependency>
+      <groupId>com.cloudbroker.platform.ifs.common</groupId>
+      <artifactId>ifs-common-core</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbroker.platform.ifs.common</groupId>
+      <artifactId>ifs-common-http</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbroker.platform.ifs.common</groupId>
+      <artifactId>ifs-common-datasource</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbroker.platform.ifs.common</groupId>
+      <artifactId>ifs-common-cache</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbroker.platform.ifs.common</groupId>
+      <artifactId>ifs-common-zookeeper</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbroker.platform.ifs.common</groupId>
+      <artifactId>ifs-common-config</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbroker.platform.ifs.common</groupId>
+      <artifactId>ifs-common-jres</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbroker.platform.ifs.common</groupId>
+      <artifactId>ifs-common-t2sdk</artifactId>
+      <version>${project.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.servlet</groupId>
+          <artifactId>servlet-api</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbroker.platform.ifs.common</groupId>
+      <artifactId>ifs-common-cert</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbroker.platform.ifs.common</groupId>
+      <artifactId>ifs-common-bizimpl</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbroker.platform.ifs.common</groupId>
+      <artifactId>ifs-common-bizitf</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbroker.platform.ifs.common</groupId>
+      <artifactId>ifs-common-jetty</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbroker.platform.ifs.common</groupId>
+      <artifactId>ifs-common-validate</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+
+    <!-- cache -->
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+      <version>2.8.1</version>
+    </dependency>
+    <dependency>
+      <groupId>net.spy</groupId>
+      <artifactId>spymemcached</artifactId>
+      <version>2.11.5</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>4.5.3</version>
+    </dependency>
+  </dependencies>
+
+
+
+  <build>
+    <finalName>redisLock</finalName>
+  </build>
+</project>
